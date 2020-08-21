@@ -24,5 +24,6 @@ static int Rotate_L(lua_State *L);
 static int Scale_L(lua_State *L);
 
 void objectFunction_L(Object *obj, lua_State *L, const char* fn);
+void PushObjectToRegistry(lua_State *L, Object *obj);
 
 #endif

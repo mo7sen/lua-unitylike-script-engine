@@ -1,4 +1,3 @@
-
 function onStart()
   print("onStart")
   i = 0

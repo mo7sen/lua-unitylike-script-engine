@@ -21,7 +21,13 @@ int main()
   lua_State *state = luaL_newstate();
   luaL_openlibs(state);
 
-  //onStartObject(&obj1, state);
+  // Setting metatables
+  luaL_newmetatable(state, "Object");
+  luaL_newmetatable(state, "Transform");
+  luaL_newmetatable(state, "Vec3");
+
+  PushObjectToRegistry(state, &obj1);
+
   objectFunction_L(&obj1, state, "onStart");
 
   for(int i = 0; i < 10; ++i)
