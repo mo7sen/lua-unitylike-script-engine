@@ -10,10 +10,13 @@ add_executable(unitylike_lua
   src/main.c
   src/object.c
   src/object_l.c
+  extern/luaautoc/lautoc.c
   )
 
 target_include_directories(unitylike_lua PUBLIC
   include
+  extern/luaautoc
+  /usr/include/lua5.3
   )
 
 target_link_libraries(unitylike_lua

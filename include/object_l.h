@@ -25,4 +25,11 @@ static int Scale_L(lua_State *L);
 
 void objectFunction_L(Object *obj, lua_State *L, const char* fn);
 
+void Register_Vec3_Lua(lua_State *L);
+void Register_Transform_Lua(lua_State *L);
+void Register_Object_Lua(lua_State *L);
+
+int vec3_index(lua_State *L);
+int vec3_newindex(lua_State *L);
+
 #endif

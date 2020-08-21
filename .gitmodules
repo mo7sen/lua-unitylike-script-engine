@@ -1,0 +1,3 @@
+[submodule "extern/luaautoc"]
+	path = extern/luaautoc
+	url = https://github.com/orangeduck/luaautoc
